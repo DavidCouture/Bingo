@@ -1,0 +1,38 @@
+h1, h2, td {
+    text-align: center;
+}
+
+td, th {
+    height: 2rem;
+    width: 2rem;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#playerSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#calledSection {
+    height: 20px;
+}
+
+.player-card {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.num-called {
+    background-color: lightgreen;
+}
