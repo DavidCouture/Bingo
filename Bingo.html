@@ -11,19 +11,38 @@
   <h1>Bingo</h1>
   <!-- Controls -->
   <section>
-    <button id="playBtn">Play</button>
-    <button id="resetBtn">Reset</button>
+    <button id="playBtn">Call Number</button>
+    <button id="resetBtn">New Game</button>
     <button id="buyBtn">Buy Card</button>
+    <form>
+      <fieldset id="marking-method">
+        <legend>Choose How to Mark Cards</legend>
+        <input type="radio" id="automatic-mode" name="marking" value="Automatic" checked>
+        <label for="automatic-mode">Auto</label>
+        <input type="radio" id="manual-mode" name="marking" value="Manual">
+        <label for="manual-mode">Manual</label>
+      </fieldset>
+      <fieldset id="win-condition">
+        <legend>Game Type</legend>
+        <input type="radio" id="standard" name="winCon" value="Standard" checked>
+        <label for="standard">Standard</label>
+        <input type="radio" id="fourCorners" name="winCon" value="FourCorners" >
+        <label for="fourCorners">Four Corners</label>
+        <input type="radio" id="fullCard" name="winCon" value="FullCard" >
+        <label for="fullCard">Full Card</label>
+      </fieldset>
+    </form>
   </section>
   <!-- Called Bingo Numbers -->
-  <h2>Called Numbers</h2>
-  <section id="calledSection">   
-    <p id="calledNumsDisplayed"></p>
+  <h2 id="calledNumsHeading">Called Numbers</h2>
+  <section id="calledSection"> 
+    <ol id="calledNumsDisplayed"></ol>
   </section>
   <!-- Player Bingo Cards -->
-  <h2>Your Numbers</h2>
+  <h2>Your Cards</h2>
   <section id="playerSection">
   </section>
+  <div id="win-notification" class="hidden"></div>  
   <script src="Bingo.js"></script>
 </body>
 </html>
